@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  beachmatch.api:
+    image: ${DOCKER_REGISTRY-}beachmatchapi
+    build:
+      context: .
+      dockerfile: BeachMatch.API/Dockerfile
+    depends_on:
+      - beachmatchdb
+
+  beachmatchdb:
+    image: postgres:15
+    container_name: beachmatchdb
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: beachmatchdb
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

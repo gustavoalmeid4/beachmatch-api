@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  beachmatch.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Host=beachmatchdb;Port=5432;Database=beachmatchdb;Username=postgres;Password=admin
+    ports:
+      - "5000:80"
