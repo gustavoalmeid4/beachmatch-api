@@ -5,7 +5,7 @@ services:
     image: ${DOCKER_REGISTRY-}beachmatchapi
     build:
       context: .
-      dockerfile: BeachMatch.API/Dockerfile
+      dockerfile: src/BeachMatch.API/Dockerfile
     depends_on:
       - beachmatchdb
 

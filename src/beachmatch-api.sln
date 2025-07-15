@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeachMatch.Domain", "BeachM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeachMatch.Infrastructure", "BeachMatch.Infrastructure\BeachMatch.Infrastructure.csproj", "{420949B3-48CA-4385-96C8-AACE6240D0DD}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{14C25E87-996A-46A5-90C2-00491599A181}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "..\docker-compose.dcproj", "{14C25E87-996A-46A5-90C2-00491599A181}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

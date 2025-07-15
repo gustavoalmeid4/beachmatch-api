@@ -18,9 +18,8 @@ namespace BeachMatch.Infrastructure.Persistence
 
             modelBuilder.Entity<Player>(entity =>
             {
-                entity.HasKey(p => p.Id);
+                entity.Property(p => p.Id).ValueGeneratedOnAdd();
                 entity.Property(p => p.Name).IsRequired().HasMaxLength(100);
-                entity.Property(p => p.SkillLevel).IsRequired();
             });
 
         }
