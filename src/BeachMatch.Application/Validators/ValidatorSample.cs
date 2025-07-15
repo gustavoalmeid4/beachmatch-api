@@ -1,0 +1,1 @@
+// Sample ValidatorSample.cs in BeachMatch.Application/Validators
