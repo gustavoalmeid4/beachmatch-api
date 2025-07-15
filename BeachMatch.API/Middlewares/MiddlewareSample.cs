@@ -1,1 +1,0 @@
-// Sample MiddlewareSample.cs in BeachMatch.API/Middlewares
